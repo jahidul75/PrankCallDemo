@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BackroundCollectionViewCell" id="gTV-IL-0wX" customClass="BackroundCollectionViewCell" customModule="AutoLayout" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="567"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="567"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Banner1" translatesAutoresizingMaskIntoConstraints="NO" id="wna-3m-5Ep">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="567"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IAP full Shadow" translatesAutoresizingMaskIntoConstraints="NO" id="PH2-Dh-lmT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="567"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="wna-3m-5Ep" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="0r6-eh-h3L"/>
+                <constraint firstAttribute="bottom" secondItem="wna-3m-5Ep" secondAttribute="bottom" id="53I-nL-BoE"/>
+                <constraint firstItem="PH2-Dh-lmT" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="CjY-qC-E7u"/>
+                <constraint firstItem="wna-3m-5Ep" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="GGY-Zz-pjx"/>
+                <constraint firstAttribute="trailing" secondItem="wna-3m-5Ep" secondAttribute="trailing" id="Jvy-FO-3p1"/>
+                <constraint firstAttribute="bottom" secondItem="PH2-Dh-lmT" secondAttribute="bottom" id="LYc-yF-Fzz"/>
+                <constraint firstItem="PH2-Dh-lmT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Qf6-OP-z4W"/>
+                <constraint firstAttribute="trailing" secondItem="PH2-Dh-lmT" secondAttribute="trailing" id="Xo8-Mg-CXn"/>
+            </constraints>
+            <size key="customSize" width="320" height="567"/>
+            <connections>
+                <outlet property="imgBackground" destination="wna-3m-5Ep" id="6ht-I5-NKm"/>
+                <outlet property="imgShadow" destination="PH2-Dh-lmT" id="6TL-aJ-aA7"/>
+            </connections>
+            <point key="canvasLocation" x="229.00763358778624" y="-35.563380281690144"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Banner1" width="860" height="1864"/>
+        <image name="IAP full Shadow" width="860" height="1864"/>
+    </resources>
+</document>
